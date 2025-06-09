@@ -13,7 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import utils.Common;
-public class TF_RC_015 {
+public class TC_RF_015 {
 	
     private static final String URL = "jdbc:mysql://localhost:3306/opencart_db";
     private static final String USER = "root";

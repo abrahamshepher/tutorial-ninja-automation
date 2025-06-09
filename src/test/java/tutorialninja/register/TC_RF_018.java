@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import utils.Common;
-public class TF_RC_018 {
+public class TC_RF_018 {
 	@Test
 	public void verifyRegisteringAccountFieldsHeightWidthAligment() throws IOException {
 		

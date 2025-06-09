@@ -11,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import utils.Common;
-public class TF_RC_017 {
+public class TC_RF_017 {
 WebDriver driver;
 	
 	@AfterMethod
