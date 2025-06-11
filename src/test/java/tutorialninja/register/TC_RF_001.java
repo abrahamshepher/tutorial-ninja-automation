@@ -6,20 +6,33 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import utils.Common;
 
 public class TC_RF_001 {
+	WebDriver driver;
+	@BeforeMethod
+	public void setup() {
 
-	@Test
-	public void verifyRegisteration() {
-		WebDriver driver= new ChromeDriver();
+		driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		driver.manage().window().maximize();
 		driver.get("https://tutorialsninja.com/demo/");
 		driver.findElement(By.xpath("//span[text()='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();	
+	}
+	@AfterMethod
+	public void teardown() {
+		if(driver!=null) {driver.quit();}
+		
+	}
+	
+	@Test(priority=1)
+	public void verifyRegisteration() {
+		
 		driver.findElement(By.id("input-firstname")).sendKeys("Arun");
 		driver.findElement(By.id("input-lastname")).sendKeys("Lalit");
 		driver.findElement(By.id("input-email")).sendKeys(Common.generateNewEmail());
@@ -49,7 +62,7 @@ public class TC_RF_001 {
 		driver.findElement(By.xpath("//a[text()='Continue']")).click();
 		
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed());
-		driver.quit();
+		
 }
 	
 

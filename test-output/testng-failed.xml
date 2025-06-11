@@ -3,11 +3,38 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tutorialninja.register.TC_RF_028">
+      <class name="tutorialninja.tests.Register">
         <methods>
-          <include name="verifyRegisteringAccountInDifferentTestEnvironments" invocation-numbers="1 2"/>
+          <include name="verifyVisibiltyTogglineOfPasswordsFieldsOnRegisterAccount"/>
+          <include name="setup"/>
+          <include name="verifyRegisteringAccountFieldsHeightWidthAligment"/>
+          <include name="verifyBreadcrumbURLHeadingTitleOfRegisterAccountPage"/>
+          <include name="verifyDataTestingOfRegisteringAccount"/>
+          <include name="verifyRegisteringAccountUsingKeyboardKeys"/>
+          <include name="verifyRegisteringAccountWithOnlySpaces"/>
+          <include name="verifyRegisteringWithMandatoryFields"/>
+          <include name="verifyLeadingAndTrailingSpacesWhileRegisteringAccount"/>
+          <include name="verifyRegisteringAccountBySubscribingToNewsletter"/>
+          <include name="verifyConfirmationEmail"/>
+          <include name="verifyPrivacyPolicyFieldOnRegisterAccountPage"/>
+          <include name="verifyUIOfRegisterAccountPage"/>
+          <include name="verifyRegisteringAccountWithoutEnteringPasswordIntoPasswordConfirmField"/>
+          <include name="verifyWorkingOfEveryLinkOnRegisterAccountPage"/>
+          <include name="verifyRegistringAccountUsingExistingEmail"/>
+          <include name="verifyMandatoryFieldsSymbolAndColorInRegisterAccountPage"/>
+          <include name="verifyRegisterAccountByProvidingInvalidTelephoneNumber"/>
+          <include name="teardown"/>
+          <include name="verifyRegisteringAccountWithInvalidEmails"/>
+          <include name="verifyRegisteringAccountWithoutPrivacyPolicySelection"/>
+          <include name="verifyNavigatingToRegisterAccountUsingMultipleWay"/>
+          <include name="verifyRegisteringAccountInDifferentTestEnvironments"/>
+          <include name="verifyPlaceHoldersOfTextFieldsInRegisterAccountPage"/>
+          <include name="verifyRegisterAccountWithAllFields"/>
+          <include name="verifyRegisteringAccountByProvidingMismatchingPasswords"/>
+          <include name="verifyRegisteringAccountAndCheckingPasswordComplexityStandards"/>
+          <include name="verifyRegisteringAccountBySayingNoToNewsletter"/>
         </methods>
-      </class> <!-- tutorialninja.register.TC_RF_028 -->
+      </class> <!-- tutorialninja.tests.Register -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
