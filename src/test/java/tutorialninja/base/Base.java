@@ -1,10 +1,5 @@
 package tutorialninja.base;
 
-//public class Base {
-//
-//}
-//package tutorialsninja.base;
-
 import java.time.Duration;
 import java.util.Properties;
 

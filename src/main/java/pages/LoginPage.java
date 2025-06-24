@@ -5,17 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import pages.root.RootPage;
 import utils.ElementUtils;
 
-public class LoginPage {
+public class LoginPage extends RootPage{
 	ElementUtils elementUtils;
 
-	WebDriver driver;
-
 	public LoginPage(WebDriver driver) {
-//		super(driver);
+		super(driver);
 		this.driver = driver;
-//		elementUtils = new ElementUtils(driver);
+		elementUtils = new ElementUtils(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
